@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Manhattanka Tatuuje — Studio Tatuażu w Piekarach Śląskich</title>
+  <meta name="description" content="Autorskie tatuaże w Piekarach Śląskich. Fineline, blackwork, ilustracja. Kameralna pracownia, czyste warunki, projekt dopasowany do ciebie." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- =============== NAV =============== -->
+<nav class="nav">
+  <a href="#top" class="brand" aria-label="Manhattanka Tatuuje — strona główna">
+    <span class="brand-mark">M</span>
+    <span class="brand-name">Manhattanka <em>tatuuje</em></span>
+  </a>
+  <div class="nav-links">
+    <a href="#realizacje">Realizacje</a>
+    <a href="#o-mnie">O mnie</a>
+    <a href="#proces">Proces</a>
+    <a href="#oferta">Oferta</a>
+    <a href="#kontakt">Kontakt</a>
+  </div>
+  <button class="nav-menu-btn" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+  <a href="#kontakt" class="nav-cta">Zarezerwuj</a>
+</nav>
+
+<!-- Mobile nav overlay -->
+<div class="mobile-nav">
+  <a href="#realizacje">Realizacje</a>
+  <a href="#o-mnie">O mnie</a>
+  <a href="#proces">Proces</a>
+  <a href="#oferta">Oferta</a>
+  <a href="#kontakt">Kontakt</a>
+</div>
+
+<!-- =============== HERO =============== -->
+<section class="hero" id="top">
+  <div class="hero-left">
+    <div>
+      <div class="eyebrow"><span class="dot"></span><span>Studio Tatuażu · Piekary Śląskie · od 2019</span></div>
+      <h1>
+        <span class="thin">Profesjonalizm w&nbsp;każdym detalu</span>
+        Sztuka<br/><em>na skórze</em><br/>od Manhattanki.
+      </h1>
+      <p class="hero-sub">
+        Autorskie tatuaże w&nbsp;estetyce fineline, blackwork i&nbsp;ilustracji.
+        Spokojna pracownia, czyste warunki, projekt dopasowany do&nbsp;ciebie — bez kompromisów.
+      </p>
+    </div>
+    <div class="hero-meta">
+      <div class="meta-item"><div class="k">Doświadczenie</div><div class="v"><em>6</em> lat</div></div>
+      <div class="meta-item"><div class="k">Realizacji</div><div class="v"><em>400+</em></div></div>
+      <div class="meta-item"><div class="k">Lokalizacja</div><div class="v">Piekary Śl.</div></div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-img" role="img" aria-label="Tatuaż fineline na ramieniu"></div>
+    <div class="hero-tag">
+      <span class="pill">Studio · ul. Bytomska 14 · Piekary Śląskie</span>
+      <span class="pill">↓ Przewiń</span>
+    </div>
+  </div>
+</section>
+
+<!-- =============== MARQUEE =============== -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span><em>Fineline</em></span><span class="sep"></span>
+    <span>Blackwork</span><span class="sep"></span>
+    <span><em>Ornamental</em></span><span class="sep"></span>
+    <span>Botanical</span><span class="sep"></span>
+    <span><em>Lettering</em></span><span class="sep"></span>
+    <span>Micro-realism</span><span class="sep"></span>
+    <span><em>Fineline</em></span><span class="sep"></span>
+    <span>Blackwork</span><span class="sep"></span>
+    <span><em>Ornamental</em></span><span class="sep"></span>
+    <span>Botanical</span><span class="sep"></span>
+    <span><em>Lettering</em></span><span class="sep"></span>
+    <span>Micro-realism</span><span class="sep"></span>
+  </div>
+</div>
+
+<!-- =============== GALLERY =============== -->
+<section class="section" id="realizacje">
+  <div class="section-head">
+    <div>
+      <div class="section-num">01 / Portfolio</div>
+      <h2>Wybrane <em>realizacje</em></h2>
+    </div>
+    <p class="section-lede">
+      Każdy tatuaż projektuję od zera, dopasowując do anatomii, ruchu skóry i&nbsp;temperamentu osoby. Poniżej fragment ostatnich realizacji.
+    </p>
+  </div>
+
+  <div class="gallery-controls">
+    <div class="filter-group" id="filters">
+      <button class="filter-btn is-active" data-filter="all">Wszystkie</button>
+      <button class="filter-btn" data-filter="black">Czarne</button>
+      <button class="filter-btn" data-filter="colored">Kolorowe</button>
+    </div>
+    <span class="gallery-count" id="count">09 / 09</span>
+  </div>
+
+  <div class="gallery" id="gallery">
+    <div class="tile t1" data-cat="black">
+      <div class="tile-img" style="background-image:url('https://images.unsplash.com/photo-1568515045052-f9a854d70bfd?w=1200&q=80&auto=format&fit=crop')"></div>
+      <span class="tile-tag">Czarny</span>
+      <div class="tile-meta"><span class="t">Kompozycja botaniczna</span><span class="s">2025 · Przedramię</span></div>
+    </div>
+    <div class="tile t2" data-cat="colored">
+      <div class="tile-img" style="background-image:url('https://images.unsplash.com/photo-1581301308442-71f7e1bc88c7?w=1000&q=80&auto=format&fit=crop')"></div>
+      <span class="tile-tag">Kolor</span>
+      <div class="tile-meta"><span class="t">Kwiat w pełnym kolorze</span><span class="s">2025 · Łydka</span></div>
+    </div>
+    <div class="tile t3" data-cat="black">
+      <div class="tile-img" style="background-image:url('https://images.unsplash.com/photo-1565058379802-bbe93b2f703a?w=1000&q=80&auto=format&fit=crop')"></div>
+      <span class="tile-tag">Czarny</span>
+      <div class="tile-meta"><span class="t">Mandala</span><span class="s">2024 · Plecy</span></div>
+    </div>
+
+    <div class="tile t4" data-cat="black">
+      <div class="tile-img" style="background-image:url('https://images.unsplash.com/photo-1543059509-1df2eaf00ddc?w=1000&q=80&auto=format&fit=crop')"></div>
+      <span class="tile-tag">Czarny</span>
+      <div class="tile-meta"><span class="t">Gałązka oliwna</span><span class="s">2024 · Obojczyk</span></div>
+    </div>
+    <div class="tile t5" data-cat="colored">
+      <div class="tile-img" style="background-image:url('https://images.unsplash.com/photo-1604881991720-f91add269bed?w=1400&q=80&auto=format&fit=crop')"></div>
+      <span class="tile-tag">Kolor</span>
+      <div class="tile-meta"><span class="t">Akwarela na skórze</span><span class="s">2025 · Ramię</span></div>
+    </div>
+    <div class="tile t6" data-cat="black">
+      <div class="tile-img" style="background-image:url('https://images.unsplash.com/photo-1552627019-947c3789ffb5?w=1000&q=80&auto=format&fit=crop')"></div>
+      <span class="tile-tag">Czarny</span>
+      <div class="tile-meta"><span class="t">Geometria nocy</span><span class="s">2025 · Udo</span></div>
+    </div>
+
+    <div class="tile t7" data-cat="black">
+      <div class="tile-img" style="background-image:url('https://images.unsplash.com/photo-1578659258511-4a4e7dee7344?w=1000&q=80&auto=format&fit=crop')"></div>
+      <span class="tile-tag">Czarny</span>
+      <div class="tile-meta"><span class="t">Wzór symetryczny</span><span class="s">2024 · Klatka</span></div>
+    </div>
+    <div class="tile t8" data-cat="colored">
+      <div class="tile-img" style="background-image:url('https://images.unsplash.com/photo-1521478706270-f2e33c203d95?w=1000&q=80&auto=format&fit=crop')"></div>
+      <span class="tile-tag">Kolor</span>
+      <div class="tile-meta"><span class="t">Polne kwiaty w kolorze</span><span class="s">2025 · Bok</span></div>
+    </div>
+    <div class="tile t9" data-cat="black">
+      <div class="tile-img" style="background-image:url('https://images.unsplash.com/photo-1590246814883-55cd7e02f4ac?w=1000&q=80&auto=format&fit=crop')"></div>
+      <span class="tile-tag">Czarny</span>
+      <div class="tile-meta"><span class="t">Subtelny portret</span><span class="s">2024 · Łopatka</span></div>
+    </div>
+  </div>
+
+  <div class="gallery-foot">
+    <a href="https://instagram.com" target="_blank" rel="noopener" class="ghost-btn">Zobacz pełne archiwum &nbsp;→</a>
+  </div>
+</section>
+
+<!-- =============== ABOUT / WHY =============== -->
+<section class="section" id="o-mnie" style="border-top:1px solid var(--line)">
+  <div class="section-head">
+    <div>
+      <div class="section-num">02 / O mnie</div>
+      <h2>Dlaczego <em>Manhattanka</em><br/>tatuuje?</h2>
+    </div>
+    <p class="section-lede">
+      Tatuuję od&nbsp;sześciu lat. Zaczęłam od&nbsp;rysunku ołówkiem, dziś prowadzę kameralną pracownię w&nbsp;Piekarach Śląskich. Wierzę w&nbsp;detal, ciszę i&nbsp;czysty stół — bo&nbsp;dobry tatuaż powstaje powoli.
+    </p>
+  </div>
+
+  <div class="why">
+    <div class="why-left">
+      <p>
+        Każdą sesję traktuję jak osobne spotkanie. Zaczynamy od&nbsp;rozmowy — o&nbsp;motywie, o&nbsp;ciele, o&nbsp;tym, co&nbsp;chcesz zostawić na&nbsp;sobie. Potem rysuję; ty&nbsp;weryfikujesz. Tatuuję dopiero, kiedy wzór jest <em>twój</em>.
+      </p>
+      <p>
+        Nie wykonuję projektów na&nbsp;szybko ani na&nbsp;„flashach" z&nbsp;internetu. Specjalizuję się w&nbsp;fineline, blackwork i&nbsp;subtelnym lettering — tam, gdzie liczy się ręka, nie efekt.
+      </p>
+      <div class="sig">Martyna · Manhattanka</div>
+    </div>
+
+    <div class="pillars">
+      <div class="pillar">
+        <span class="num">— 01</span>
+        <div>
+          <h3>Indywidualne <em>podejście</em></h3>
+          <p>Projekt powstaje pod konkretną osobę — temat, miejsce, proporcje, charakter linii. Bez gotowców.</p>
+        </div>
+      </div>
+      <div class="pillar">
+        <span class="num">— 02</span>
+        <div>
+          <h3>Bezpieczeństwo <em>i higiena</em></h3>
+          <p>Sterylne narzędzia jednorazowego użytku, certyfikowane barwniki i&nbsp;pełna karta zgody przed sesją.</p>
+        </div>
+      </div>
+      <div class="pillar">
+        <span class="num">— 03</span>
+        <div>
+          <h3>Sztuka <em>bez kompromisów</em></h3>
+          <p>Pracuję w&nbsp;swoim tempie. Wolę odmówić niż zrobić tatuaż, w&nbsp;który nie wierzę.</p>
+        </div>
+      </div>
+      <div class="pillar">
+        <span class="num">— 04</span>
+        <div>
+          <h3>Kameralne <em>warunki</em></h3>
+          <p>Jedno stanowisko, spokojna muzyka, ciepłe światło. Tylko ty i&nbsp;ja w&nbsp;czasie sesji.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============== PROCESS =============== -->
+<section class="process" id="proces">
+  <div class="section-head">
+    <div>
+      <div class="section-num">03 / Proces</div>
+      <h2>Rezerwacje <em>i&nbsp;proces</em></h2>
+    </div>
+    <p class="section-lede">
+      Cztery kroki od&nbsp;wiadomości do&nbsp;zagojonego tatuażu. Wszystko rozplanowane, bez niespodzianek.
+    </p>
+  </div>
+
+  <div class="steps">
+    <div class="step">
+      <div class="num">01</div>
+      <h3>Wiadomość</h3>
+      <p>Napisz mailem lub na&nbsp;Instagramie. Opisz pomysł, miejsce na&nbsp;ciele i&nbsp;dołącz inspiracje, jeśli&nbsp;masz.</p>
+      <span class="tag">~ 5 min</span>
+    </div>
+    <div class="step">
+      <div class="num">02</div>
+      <h3>Konsultacja</h3>
+      <p>Krótka rozmowa online lub w&nbsp;studio. Ustalamy szczegóły, rozmiar, wycenę i&nbsp;termin.</p>
+      <span class="tag">15–30 min</span>
+    </div>
+    <div class="step">
+      <div class="num">03</div>
+      <h3>Projekt</h3>
+      <p>Rysuję szkic i&nbsp;wysyłam ci&nbsp;do&nbsp;weryfikacji. Maks. dwie rundy poprawek przed sesją.</p>
+      <span class="tag">3–7 dni</span>
+    </div>
+    <div class="step">
+      <div class="num">04</div>
+      <h3>Sesja &amp; gojenie</h3>
+      <p>Sterylne stanowisko, przerwy w&nbsp;rytmie&nbsp;ciała. Po&nbsp;wszystkim — instrukcja pielęgnacji i&nbsp;kontakt.</p>
+      <span class="tag">1–6 godz.</span>
+    </div>
+  </div>
+</section>
+
+<!-- =============== OFFER =============== -->
+<section class="section" id="oferta">
+  <div class="section-head">
+    <div>
+      <div class="section-num">04 / Oferta</div>
+      <h2>Co&nbsp;robię <em>najlepiej</em></h2>
+    </div>
+    <p class="section-lede">
+      Specjalizacje studia. Każdy projekt wyceniany indywidualnie — poniższe widełki to&nbsp;orientacja, nie cennik sztywny.
+    </p>
+  </div>
+
+  <div class="offer-grid offer-grid--two">
+    <div class="offer-card">
+      <span class="label">— 01</span>
+      <h3>Tatuaże <em>czarne</em></h3>
+      <ul>
+        <li>czysta, mocna linia — fineline, blackwork, ornamental</li>
+        <li>wypełnienia czernią i&nbsp;szarości, kontrastowe formy</li>
+        <li>od&nbsp;drobnego symbolu po duży projekt na plecach</li>
+        <li>klasyka, która dobrze starzeje się na skórze</li>
+      </ul>
+      <div class="price">od 400&nbsp;zł<small>~ 1–6 godz. · wycena po konsultacji</small></div>
+    </div>
+    <div class="offer-card">
+      <span class="label">— 02</span>
+      <h3>Tatuaże <em>kolorowe</em></h3>
+      <ul>
+        <li>nasycone barwy, neo-traditional, ilustracja</li>
+        <li>kwiaty, ptaki, motywy roślinne i&nbsp;abstrakcyjne</li>
+        <li>certyfikowane barwniki, długości sesji dopasowane do skóry</li>
+        <li>projekt malowany ręcznie w&nbsp;palecie ustalonej z&nbsp;tobą</li>
+      </ul>
+      <div class="price">od 600&nbsp;zł<small>~ 2–8 godz. · wycena po konsultacji</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- =============== CONTACT =============== -->
+<section class="section" id="kontakt">
+  <div class="section-head">
+    <div>
+      <div class="section-num">05 / Kontakt</div>
+      <h2>Napisz <em>do&nbsp;mnie</em></h2>
+    </div>
+    <p class="section-lede">
+      Najszybciej odpowiadam na&nbsp;maile w&nbsp;ciągu 48&nbsp;godzin. Im&nbsp;więcej szczegółów dostanę na&nbsp;starcie, tym lepszy projekt razem zrobimy.
+    </p>
+  </div>
+
+  <div class="contact">
+    <!-- LEFT: studio info -->
+    <div class="contact-info">
+      <div>
+        <h3>Studio<br/><em>Manhattanka</em>.</h3>
+        <p>Kameralna pracownia w&nbsp;Piekarach Śląskich. Wizyta tylko po&nbsp;wcześniejszym umówieniu.</p>
+      </div>
+      <div class="contact-meta">
+        <div class="meta-row"><span class="k">Email</span><span class="v"><a href="mailto:manhattanka.tatuuje@gmail.com">manhattanka.tatuuje@gmail.com</a></span></div>
+        <div class="meta-row"><span class="k">Studio</span><span class="v">ul. Bytomska 14 / 3<br/>41-940 Piekary Śląskie</span></div>
+        <div class="meta-row"><span class="k">Godziny</span><span class="v">Pon–Pt · 11:00–20:00<br/>Sob · po umówieniu</span></div>
+        <div class="meta-row"><span class="k">Social</span><span class="v">
+          <div class="socials">
+            <a href="https://instagram.com" target="_blank" rel="noopener">Instagram ↗</a>
+          </div>
+        </span></div>
+      </div>
+    </div>
+
+    <!-- RIGHT: form -->
+    <form class="contact-form" id="form" novalidate>
+      <!-- Web3Forms access key — replace YOUR_ACCESS_KEY with your key from https://web3forms.com -->
+      <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY" />
+      <input type="hidden" name="subject" value="Nowa rezerwacja tatuażu — Manhattanka Tatuuje" />
+      <input type="hidden" name="from_name" value="Manhattanka Tatuuje — Formularz" />
+      <!-- Honeypot spam protection -->
+      <input type="checkbox" name="botcheck" style="display:none" />
+
+      <div class="form-head">
+        <span class="lbl">Formularz rezerwacji</span>
+        <span class="num">[ M / 26 ]</span>
+      </div>
+
+      <div class="field">
+        <label for="f-name">Imię</label>
+        <input id="f-name" name="name" type="text" placeholder="Jak masz na imię?" required />
+      </div>
+
+      <div class="field-row">
+        <div class="field">
+          <label for="f-email">Email</label>
+          <input id="f-email" name="email" type="email" placeholder="twój@adres.pl" required />
+        </div>
+        <div class="field">
+          <label for="f-phone">Telefon (opcjonalnie)</label>
+          <input id="f-phone" name="phone" type="tel" placeholder="+48 ___ ___ ___" />
+        </div>
+      </div>
+
+      <div class="field-row">
+        <div class="field">
+          <label for="f-place">Miejsce na ciele</label>
+          <input id="f-place" name="place" type="text" placeholder="np. przedramię, łopatka..." />
+        </div>
+        <div class="field">
+          <label for="f-size">Rozmiar (przybliżony)</label>
+          <select id="f-size" name="size">
+            <option>do 5 cm</option>
+            <option>5–10 cm</option>
+            <option>10–20 cm</option>
+            <option>powyżej 20 cm</option>
+            <option>nie wiem jeszcze</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="f-msg">Pomysł / inspiracje</label>
+        <textarea id="f-msg" name="message" placeholder="Opisz pomysł na tatuaż, dodaj propozycje terminów. Linki do inspiracji mile widziane." required></textarea>
+      </div>
+
+      <div class="form-actions">
+        <p class="form-note">Wysyłając formularz akceptujesz&nbsp;przetwarzanie&nbsp;danych w&nbsp;celu&nbsp;kontaktu.</p>
+        <button type="submit" class="submit">Wyślij wiadomość <span class="arr">→</span></button>
+      </div>
+
+      <div id="success" class="form-success">
+        <span class="ic">✓</span>
+        <div>
+          <strong style="color:var(--paper);font-weight:500">Wiadomość wysłana!</strong><br/>
+          Dziękuję za kontakt. Odpowiem w&nbsp;ciągu 48&nbsp;godzin.
+        </div>
+      </div>
+
+      <div id="error" class="form-error">
+        <span class="ic">✕</span>
+        <div>
+          <strong style="font-weight:500">Coś poszło nie tak.</strong><br/>
+          Spróbuj ponownie lub napisz bezpośrednio na <a href="mailto:manhattanka.tatuuje@gmail.com" style="color:#e88;text-decoration:underline">manhattanka.tatuuje@gmail.com</a>.
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- =============== FOOTER =============== -->
+<footer>
+  <div>
+    <div class="foot-brand">Manhattanka<br/><em>tatuuje.</em></div>
+    <p class="foot-tag">Autorskie tatuaże w&nbsp;Piekarach Śląskich. Każdy projekt rysowany ręcznie pod konkretną osobę.</p>
+  </div>
+  <div>
+    <h4>Sekcje</h4>
+    <ul>
+      <li><a href="#realizacje">Realizacje</a></li>
+      <li><a href="#o-mnie">O mnie</a></li>
+      <li><a href="#proces">Proces</a></li>
+      <li><a href="#oferta">Oferta</a></li>
+    </ul>
+  </div>
+  <div>
+    <h4>Kontakt</h4>
+    <ul>
+      <li><a href="mailto:manhattanka.tatuuje@gmail.com">manhattanka.tatuuje@gmail.com</a></li>
+      <li>ul. Bytomska 14 / 3, Piekary Śląskie</li>
+      <li>Pon–Pt · 11:00–20:00</li>
+    </ul>
+  </div>
+  <div>
+    <h4>Social</h4>
+    <ul>
+      <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram ↗</a></li>
+    </ul>
+  </div>
+  <div class="foot-bottom">
+    <span>© 2026 Manhattanka Tatuuje · Wszelkie prawa zastrzeżone</span>
+    <span>Z pasją i&nbsp;dbałością · Piekary Śl.</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
