@@ -53,12 +53,13 @@ document.addEventListener('DOMContentLoaded', () => {
     submitBtn.disabled = true;
     submitBtn.innerHTML = 'Wysyłanie… <span class="arr">⟳</span>';
 
-    const formData = new FormData(form);
+    const formData = Object.fromEntries(new FormData(form).entries());
 
     try {
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        body: formData,
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
       });
 
       const result = await response.json();
