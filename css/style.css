@@ -24,6 +24,7 @@ html, body {
   color: var(--paper);
   font-family: var(--sans);
   -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
 }
 
@@ -604,7 +605,7 @@ footer ul a:hover { color: var(--paper) }
 @media (max-width: 1100px) {
   .hero { grid-template-columns: 1fr }
   .hero-left { padding: 140px 32px 40px; border-right: 0; border-bottom: 1px solid var(--line) }
-  .hero-right { min-height: 60vh }
+  .hero-right { min-height: 50vh }
   .section, .process { padding: 96px 32px }
   .section-head { grid-template-columns: 1fr; gap: 18px; align-items: start }
   .why { grid-template-columns: 1fr; gap: 40px }
@@ -622,22 +623,99 @@ footer ul a:hover { color: var(--paper) }
   footer { grid-template-columns: 1fr 1fr; padding: 60px 32px 30px }
   .nav { padding: 14px 20px }
   .nav-links { display: none }
+  .nav-cta { display: none }
   .nav-menu-btn { display: flex }
   .mobile-nav { display: flex }
+  .marquee span { font-size: 24px }
 }
 
 @media (max-width: 600px) {
-  .hero-left { padding: 120px 20px 32px }
-  .hero-meta { grid-template-columns: 1fr; gap: 16px }
-  .section, .process { padding: 72px 20px }
-  .steps { grid-template-columns: 1fr }
-  .gallery { grid-template-columns: 1fr }
+  /* --- Nav --- */
+  .nav { padding: 12px 16px }
+  .brand-mark { width: 30px; height: 30px; font-size: 16px }
+  .brand-name { font-size: 17px }
+
+  /* --- Hero --- */
+  .hero-left { padding: 100px 18px 28px }
+  .hero h1 { font-size: clamp(38px, 11vw, 56px); margin-bottom: 20px }
+  .hero h1 .thin { font-size: 9px; letter-spacing: .18em; margin-bottom: 14px }
+  .hero-sub { font-size: 15px; line-height: 1.6 }
+  .hero-right { min-height: 40vh }
+  .hero-meta { grid-template-columns: repeat(3, 1fr); gap: 12px }
+  .meta-item .k { font-size: 9px }
+  .meta-item .v { font-size: 18px; margin-top: 4px }
+  .hero-tag { left: 16px; right: 16px; bottom: 16px; gap: 12px }
+  .hero-tag .pill { font-size: 10px; padding: 6px 10px }
+
+  /* --- Marquee --- */
+  .marquee span { font-size: 20px }
+  .marquee-track { gap: 28px; padding: 14px 0 }
+
+  /* --- Sections --- */
+  .section, .process { padding: 56px 18px }
+  .section h2 { font-size: clamp(32px, 9vw, 44px) }
+  .section-lede { font-size: 15px }
+  .section-head { gap: 14px; margin-bottom: 40px }
+
+  /* --- Gallery --- */
+  .gallery-controls { flex-direction: column; align-items: flex-start; gap: 12px }
+  .filter-btn { padding: 10px 16px; font-size: 11px }
+  .gallery { grid-template-columns: 1fr; gap: 12px }
   .tile.t1, .tile.t2, .tile.t3, .tile.t4, .tile.t5,
-  .tile.t6, .tile.t7, .tile.t8, .tile.t9 { grid-column: span 1 }
-  footer { grid-template-columns: 1fr; padding: 48px 20px 24px }
-  .foot-bottom { flex-direction: column; gap: 8px }
-  .contact-info { padding: 32px 20px }
-  .contact-form { padding: 32px 20px }
+  .tile.t6, .tile.t7, .tile.t8, .tile.t9 { grid-column: span 1; aspect-ratio: 4/5 }
+  .tile-meta { padding: 14px 16px }
+  .tile-meta .t { font-size: 16px }
+  .ghost-btn { width: 100%; text-align: center; padding: 16px 20px }
+
+  /* --- About / Pillars --- */
+  .why-left p { font-size: 16px }
+  .why-left .sig { font-size: 20px; margin-top: 28px }
+  .pillar { grid-template-columns: 44px 1fr; gap: 14px; padding: 22px 0 }
+  .pillar .num { font-size: 10px; padding-top: 4px }
+  .pillar h3 { font-size: 22px; margin-bottom: 6px }
+  .pillar p { font-size: 15px }
+
+  /* --- Process steps --- */
+  .steps { grid-template-columns: 1fr; gap: 0 }
+  .step { padding: 24px 0 }
+  .step .num { font-size: 40px; margin-bottom: 12px }
+  .step h3 { font-size: 20px }
+  .step p { font-size: 14px }
+
+  /* --- Offer --- */
+  .offer-card { padding: 28px 20px }
+  .offer-card h3 { font-size: 26px }
+  .offer-card li { font-size: 15px }
+  .offer-card .price { font-size: 20px }
+
+  /* --- Contact --- */
+  .contact-info { padding: 28px 18px }
+  .contact-info h3 { font-size: 32px; margin-bottom: 12px }
+  .contact-info p { font-size: 15px }
+  .meta-row { grid-template-columns: 72px 1fr; gap: 12px; padding: 10px 0 }
+  .meta-row .k { font-size: 9px }
+  .meta-row .v { font-size: 14px }
+  .socials a { padding: 10px 14px; font-size: 11px }
+
+  .contact-form { padding: 28px 18px }
+  .field { padding: 14px 0 }
+  .field input, .field textarea, .field select { font-size: 16px; padding: 10px 0 }
+  .field textarea { min-height: 100px; font-size: 16px }
   .form-actions { flex-direction: column; align-items: stretch; gap: 16px }
-  .submit { justify-content: center }
+  .form-note { max-width: 100%; font-size: 10px }
+  .submit { justify-content: center; padding: 18px 22px; font-size: 12px }
+
+  /* --- Footer --- */
+  footer { grid-template-columns: 1fr; padding: 40px 18px 20px; gap: 32px }
+  .foot-brand { font-size: 28px }
+  .foot-tag { font-size: 14px }
+  footer ul a { font-size: 15px }
+  .foot-bottom {
+    flex-direction: column; gap: 6px;
+    font-size: 9.5px; text-align: center;
+  }
+
+  /* --- Mobile nav --- */
+  .mobile-nav a { font-size: 26px }
+  .mobile-nav { gap: 24px }
 }
